@@ -20,32 +20,25 @@
     <button onclick="changeSize()">changeSize</button>
     <button onclick="resetSize()">resetSize</button>
     <input id="id-txt" type="number" oninput="changeSizeFromText()">
-    <form name="contact" method="post" netlify>
-        <h1 id="" top">hello</h1>
-        <label for="">name</label>
-        <input type="text" placeholder="enter name" required>
-        <br><label for="">email</label>
-        <input type="text" placeholder="enter email" required>
-        <br><label for="">tel</label>
-        <input type="tel" placeholder="enter tel" required>
-        <br><input type="radio" name="test" id="test1">
-        <label for="test1">test1</label>
-        <input type="radio" name="test">test2
-        <input type="radio" name="test">test3
-        <br><input type="checkbox" required>confirm
-        <br><select name="" id="">
-            <option value="">100</option>
-            <option value="">200</option>
-            <option value="">300</option>
-            <option value="">400</option>
-            <option value="">500</option>
-            <option value="">600</option>
-        </select>
-        <br>
-        <a target="_blank" href="/thank.html">
-            <button>send
-            </button>
-        </a>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <p class="hidden">
+            <label>
+                Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Email: <input type="text" name="email" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Message: <textarea name="message"></textarea>
+            </label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
     </form>
 
 </body>
