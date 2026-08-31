@@ -20,7 +20,7 @@
     <button onclick="changeSize()">changeSize</button>
     <button onclick="resetSize()">resetSize</button>
     <input id="id-txt" type="number" oninput="changeSizeFromText()">
-    <form method="post" data-netlify="true" action="thank.html">
+    <form name="contact" method="post" netlify>
         <h1 id="" top">hello</h1>
         <label for="">name</label>
         <input type="text" placeholder="enter name" required>
@@ -42,11 +42,13 @@
             <option value="">600</option>
         </select>
         <br>
+        <a target="_blank" href="/thank.html">
+            <button>send
+            </button>
+        </a>
+    </form>
 
 </body>
-<a target="_blank" href="/thank.html">
-    <button>send
-    </button>
-</a>
+
 
 </html>
