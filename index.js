@@ -11,7 +11,7 @@ function start() {
     document.querySelector("#id-h1").style.background = "yellow";
     document.querySelector("img").src = "2.gif";
     document.querySelector("img").style.height = "100px";
-    // document.querySelector("#id-h1").innerHTML = "hello shauli";
+    document.querySelector("#id-h1").innerHTML = "hello shauli";
 }
 function resetSize() {
     start()
